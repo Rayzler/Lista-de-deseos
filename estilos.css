@@ -1,0 +1,175 @@
+* {
+	font-family: "Forte", fantasy;
+}
+
+body {
+	background-color: #EFEFEF;
+	margin: 0;
+}
+
+@font-face {
+	font-family: "Forte";
+	src: url('Recursos/FORTE.TTF');
+}
+
+@keyframes tarjeta {
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	min-width: 390px;
+	position: sticky;
+	z-index: 50;
+	top: 0;
+	background-color: #001EFF;
+}
+
+.titulo {
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
+}
+
+.titulo h1 {
+	margin: 0;
+	color: white;
+}
+
+.titulo img {
+	width: 50px;
+	filter: invert(50%) brightness(200%);
+}
+
+.busqueda {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-right: 10px;
+	background-color: white;
+	border-radius: 30px;
+	width: 250px;
+	height: 30px;
+}
+
+.busqueda a {
+	color: #001EFF;
+	margin: 0 5px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.busqueda input {
+	flex-grow: 1;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	margin-left: 10px;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	padding: 15px 30px;
+	text-align: center;
+}
+
+.card {
+	background-color: white;
+	border-radius: 20px;
+	width: 333px;
+	height: 420px;
+	margin: 20px;
+	position: relative;
+}
+
+.card__lista {
+	position: absolute;
+	z-index: 5;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 300px;
+	text-align: left;
+	font-size: 20px;
+}
+
+.card__imagen {
+	visibility: visible;
+	position: relative;
+	z-index: 10;
+	background-color: white;
+	border-radius: 5px;
+	width: 300px;
+	height: 375px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.card__imagen img {
+	height: 350px;
+	margin: 10px auto;
+}
+
+.card__enlaces {
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #001EFF;
+	border: none;
+	border-radius: 30px;
+	width: 65%;
+	height: 48px;
+	position: absolute;
+	z-index: 20;
+	right: -12px;
+
+	font-size: 35px;
+	color: white;
+}
+
+.card__enlaces span {
+	display: inline-block;
+	flex-grow: 1;
+	margin-left: 15px;
+}
+
+.card__enlaces i {
+	margin-right: 5px;
+}
+
+.card__enlaces:hover {
+	background-color: #000853;
+	cursor: pointer;
+}
+
+.card__imagen.invisible {
+	visibility: hidden;
+}
+
+
+@media only screen and (max-width: 475px) {
+	.contenedor {
+		padding: 15px;
+	}
+
+	.titulo h1 {
+		visibility: hidden;
+		position: absolute;
+	}
+}
