@@ -213,27 +213,26 @@ ul li a:active {
 	}
 
 	.card {
-		width: 125px;
-		height: 158px;
+		width: 145px;
+		height: 183px;
 	}
 
 	.card__lista {
-		width: 113px;
-		font-size: 8px;
+		width: 131px;
+		font-size: 9px;
 	}
 
 	.card__imagen {
-		width: 113px;
-		height: 141px;
+		width: 131px;
+		height: 163px;
 	}
 
 	.card__imagen img {
-		height: 131px;
+		height: 152px;
 	}
 
 	.card__boton {
-		width: 81px;
-		height: 18px;
-		font-size: 13px;
-	}
+		width: 94px;
+		height: 21px;
+		font-size: 15px;
 }
