@@ -1,168 +1,117 @@
+var cards = document.getElementsByClassName("card");
+var botones = document.getElementsByClassName("card__boton");
+var contadores = new Array(botones.length);
+var imagenes = document.getElementsByClassName("card__imagen");
+var ids = new Array(cards.length);
+
+for (let i = 0; i < ids.length; i++)
+{
+	ids[i] = cards[i].id;
+}
+ids.sort();
+for (let i = 0; i < ids.length; i++)
+{
+	let temp = document.getElementById(ids[i]);
+	temp.style.order = i;
+}
+
+
+//Busqueda
+var input = document.getElementById("barra");
+input.onchange = function() {
+	var txt = input.value;
+	txt = txt.toUpperCase();
+	if (input.value != "")
+	{
+		for (var i = 0; i < cards.length; i++)
+		{
+			cards[i].classList.add('ocultar');
+			let mostrar = false;
+
+			for (let j = 0; j < cards[i].classList.length; j++)
+			{
+				if (cards[i].classList[j] == 'card'  || cards[i].classList[j] == 'ocultar')
+				{
+					continue;
+				}
+				let cardTxt = cards[i].classList[j];
+				while (cardTxt.includes('_'))
+				{
+					cardTxt = cardTxt.replace("_", " ");
+				}
+				cardTxt = cardTxt.toUpperCase();
+				if (cardTxt.includes(txt))
+				{
+					mostrar = true;
+				}
+			}
+
+			if (mostrar)
+			{
+				cards[i].classList.remove('ocultar');
+			}
+		}
+	}
+	else
+	{
+		for (var i = 0; i < cards.length; i++)
+		{
+			cards[i].classList.remove('ocultar');
+		}
+	}
+}
+
+
+//Ver links
 function reiniciar()
 {
-	contador_713 = 0;
-	boton_713.classList.remove("invisible");
-
-	contador_714 = 0;
-	boton_714.classList.remove("invisible");
-
-	contador_715 = 0;
-	boton_715.classList.remove("invisible");
-
-	contador_717 = 0;
-	boton_717.classList.remove("invisible");
-
-	contador_823 = 0;
-	boton_823.classList.remove("invisible");
-
-	contador_824 = 0;
-	boton_824.classList.remove("invisible");
-
-	contador_826 = 0;
-	boton_826.classList.remove("invisible");
-}
-
-//50s Wanda
-var wanda50s = document.getElementById("713");
-var boton_713 = document.getElementById('50s-Wanda');
-var contador_713 = 0;
-function cambio_713()
-{
-	if (contador_713 == 0)
+	for (var i = 0; i < contadores.length; i++)
 	{
+		volver(i);
+	}
+}
+reiniciar();
+
+
+function tarjeta(num)
+{
+	for (var i = 0; i < botones.length; i++)
+	{
+		var indice = i;
+		if (num == botones[i].parentNode.id)
+		{
+			break;
+		}
+	}
+
+	if (contadores[indice] == 0) {
 		reiniciar();
-		boton_713.classList.add('invisible');
-		contador_713 = 1;
+		ver(indice);
 	}
 	else
 	{
-		boton_713.classList.remove("invisible");
-		contador_713 = 0;
+		volver(indice);
 	}
 }
-wanda50s.addEventListener("click", cambio_713, true);
 
-//50s Vision
-var vision50s = document.getElementById("714");
-var boton_714 = document.getElementById('50s-Vision');
-var contador_714 = 0;
-function cambio_714()
+function ver(ind)
 {
-	if (contador_714 == 0)
-	{
-		reiniciar();
-		boton_714.classList.add('invisible');
-		contador_714 = 1;
-	}
-	else
-	{
-		boton_714.classList.remove("invisible");
-		contador_714 = 0;
-	}
+	imagenes[ind].classList.add("invisible");
+	contadores[ind] = 1;
+
+	botones[ind].style.transform = "scaleX(-1)";
+	var span = botones[ind].getElementsByTagName("span");
+	span[0].style.transform = "scaleX(-1)";
+	span[0].innerHTML = "Volver";
 }
-vision50s.addEventListener("click", cambio_714, true);
 
-//Halloween Wanda
-var halloweenWanda = document.getElementById("715");
-var boton_715 = document.getElementById('Halloween-Wanda');
-var contador_715 = 0;
-
-function cambio_715()
+function volver(ind)
 {
-	if (contador_715 == 0)
-	{
-		reiniciar();
-		boton_715.classList.add('invisible');
-		contador_715 = 1;
-	}
-	else
-	{
-		boton_715.classList.remove("invisible");
-		contador_715 = 0;
-	}
+	imagenes[ind].classList.remove("invisible");
+	contadores[ind] = 0;
+
+	botones[ind].style.transform = "scaleX(1)";
+	var span = botones[ind].getElementsByTagName("span");
+	span[0].style.transform = "scaleX(1)";
+	span[0].innerHTML = "Links";
 }
-halloweenWanda.addEventListener("click", cambio_715, true);
-
-//70s Wanda
-var wanda70s = document.getElementById("717");
-var boton_717 = document.getElementById('70s-Wanda');
-var contador_717 = 0;
-
-function cambio_717()
-{
-	if (contador_717 == 0)
-	{
-		reiniciar();
-		boton_717.classList.add('invisible');
-		contador_717 = 1;
-	}
-	else
-	{
-		boton_717.classList.remove("invisible");
-		contador_717 = 0;
-	}
-}
-wanda70s.addEventListener("click", cambio_717, true);
-
-//Scarlet Witch
-var scarletWitch = document.getElementById("823");
-var boton_823 = document.getElementById('Scarlet-Witch');
-var contador_823 = 0;
-
-function cambio_823()
-{
-	if (contador_823 == 0)
-	{
-		reiniciar();
-		boton_823.classList.add('invisible');
-		contador_823 = 1;
-	}
-	else
-	{
-		boton_823.classList.remove("invisible");
-		contador_823 = 0;
-	}
-}
-scarletWitch.addEventListener("click", cambio_823, true);
-
-//The Vision
-var theVision = document.getElementById("824");
-var boton_824 = document.getElementById('The-Vision');
-var contador_824 = 0;
-
-function cambio_824()
-{
-	if (contador_824 == 0)
-	{
-		reiniciar();
-		boton_824.classList.add('invisible');
-		contador_824 = 1;
-	}
-	else
-	{
-		boton_824.classList.remove("invisible");
-		contador_824 = 0;
-	}
-}
-theVision.addEventListener("click", cambio_824, true);
-
-//Agatha Harkness
-var agathaHarkness = document.getElementById("826");
-var boton_826 = document.getElementById('Agatha-Harkness');
-var contador_826 = 0;
-
-function cambio_826()
-{
-	if (contador_826 == 0)
-	{
-		reiniciar();
-		boton_826.classList.add('invisible');
-		contador_826 = 1;
-	}
-	else
-	{
-		boton_826.classList.remove("invisible");
-		contador_826 = 0;
-	}
-}
-agathaHarkness.addEventListener("click", cambio_826, true);
