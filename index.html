@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lista de deseos</title>
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Syne+Mono&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/53e3981174.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,107 +16,436 @@
 			<h1>FUNKOS</h1>
 		</div>
 		<div class="busqueda">
-			<input type="text" id="icono" placeholder="Buscar">
-			<a class="fas fa-search" href="#"></a>
+			<input type="text" id="barra" placeholder="Buscar">
+			<label for="barra" class="fas fa-search" href="#"></label>
 		</div>
 	</div>
 	<div class="contenedor">
-		<div class="card" id="Funko-713">
+		<div class="card Falcon" id="700">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Falcon-Soldier/dp/B08KGSF6T1/ref=lp_17715483011_1_12" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-847071827-funko-pop-falcon-700-falcon-and-the-winter-soldier-_JM#position=14&type=item&tracking_id=8428a062-95ab-49ee-af80-8d07999dbf5e" target="_blank">Mercado Libre #1</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-863440415-funko-pop-marvel-falcon-and-winter-soldier-the-falcon-700-_JM#position=14&type=item&tracking_id=a60c185c-ae5a-4f6d-8087-a2aae00709aa" target="_blank">Mercado Libre #2</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-849590501-funko-pop-the-falcon-and-the-winter-soldier-falcon-700-_JM#position=10&type=item&tracking_id=e543f5a9-8c21-4510-808c-2b358c72a3dd " target="_blank">Mercado Libre #3</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Falcon.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(700)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Winter_Soldier" id="701">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Marvel-Soldier-Coleccionable-Multicolor/dp/B08KGS8938/ref=sr_1_44?dchild=1&qid=1612028222&s=toys&sr=1-44" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Winter Soldier.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(701)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Baron_Zemo" id="702">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Falcon-Soldier/dp/B08KGS2CPW/ref=lp_17715483011_1_11" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-847071437-funko-pop-baron-zemo-702-falcon-and-the-winter-soldier-_JM#position=34&type=item&tracking_id=8428a062-95ab-49ee-af80-8d07999dbf5e" target="_blank">Mercado Libre #1</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-863440198-funko-pop-marvel-falcon-and-winter-soldier-baron-zemo-702-_JM#position=29&type=item&tracking_id=a60c185c-ae5a-4f6d-8087-a2aae00709aa" target="_blank">Mercado Libre #2</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Baron Zemo.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(702)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card 50s_Wanda" id="713">
 			<ul class="card__lista">
 				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-WandaVision-Maximoff/dp/B08KGSFZH4/ref=lp_17715483011_1_3" target="_blank">Amazon</a></li>
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-858106990-funko-pop-wanda-50s-713-marvel-studios-wanda-vision-_JM#position=11&type=item&tracking_id=ec2fc545-c235-4e12-95a3-abe70394524a" target="_blank">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="50s-Wanda">
+			<div class="card__imagen">
 				<img src="Recursos/50s Wanda.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="713">
+			<button class="card__boton" onclick="tarjeta(713)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
 
-		<div class="card" id="Funko-714">
+		<div class="card 50s_Vision" id="714">
 			<ul class="card__lista">
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-877114583-pop-wandavision-50s-vision-714-_JM#position=1&type=item&tracking_id=a2aa520e-cce7-4c95-b759-867ff5a7ecc2s" target="_blank">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="50s-Vision">
+			<div class="card__imagen">
 				<img src="Recursos/50s Vision.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="714">
+			<button class="card__boton" onclick="tarjeta(714)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
 
-		<div class="card" id="Funko-715">
+		<div class="card Halloween_Wanda" id="715">
 			<ul class="card__lista">
 				<li><a href="https://www.amazon.com.mx/Funko-WandaVision-Maximoff-Colecci%C3%B3n-Multicolor/dp/B08KGMC6BX/ref=pd_sbs_4?pd_rd_w=wZisa&pf_rd_p=11aa696b-6692-44f4-9634-596c79fd53c0&pf_rd_r=H5NWHHY0FQPKQ42W7GAA&pd_rd_r=8ccaf6a7-cf43-480b-a7a8-900a686da3e5&pd_rd_wg=KyJRC&pd_rd_i=B08KGMC6BX&psc=1" target="_blank">Amazon</a></li>
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-886591218-funko-pop-marvel-wandavision-wanda-halloween-_JM#position=5&type=item&tracking_id=52b73971-bc45-4bed-82e2-7117bfc097ce">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="Halloween-Wanda">
+			<div class="card__imagen">
 				<img src="Recursos/Halloween Wanda.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="715">
+			<button class="card__boton" onclick="tarjeta(715)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
 
-		<div class="card" id="Funko-717">
+		<div class="card 70s_Wanda" id="717">
 			<ul class="card__lista">
 				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Wandavision-Pregnant/dp/B08KGSJGMY/ref=pd_sbs_2?pd_rd_w=wZisa&pf_rd_p=11aa696b-6692-44f4-9634-596c79fd53c0&pf_rd_r=H5NWHHY0FQPKQ42W7GAA&pd_rd_r=8ccaf6a7-cf43-480b-a7a8-900a686da3e5&pd_rd_wg=KyJRC&pd_rd_i=B08KGSJGMY&th=1" target="_blank">Amazon</a></li>
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-849600638-funko-pop-wandavision-wanda-70s-717-_JM#position=15&type=item&tracking_id=228603ee-4cf8-486b-8f30-5491c8789f83" target="_blank">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="70s-Wanda">
+			<div class="card__imagen">
 				<img src="Recursos/70s Wanda.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="717">
+			<button class="card__boton" onclick="tarjeta(717)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
 
-		<div class="card" id="Funko-823">
+		<div class="card Scarlet_Witch" id="823">
 			<ul class="card__lista">
 				<li><a href="https://www.amazon.com.mx/Funko-54323-Pop-Marvel/dp/B08KGHDVLF/ref=sr_1_7?__mk_es_MX=ÅMÅŽÕÑ&crid=2YHKEK2BBP6VQ&dchild=1&keywords=funko+pop+wandavision&qid=1615387643&refinements=p_89%3AFunko&rnid=11790855011&s=toys&sprefix=funko+pop+%2Caps%2C225&sr=1-7" target="_blank">Amazon</a></li>
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-887270107-funko-pop-marvel-wandavision-bruja-escarlata-_JM#position=19&type=item&tracking_id=178a00b6-f0e3-4a12-b057-ae04357cd74a" target="_blank">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="Scarlet-Witch">
+			<div class="card__imagen">
 				<img src="Recursos/Scarlet Witch.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="823">
+			<button class="card__boton" onclick="tarjeta(823)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
 
-		<div class="card" id="Funko-824">
+		<div class="card The_Vision" id="824">
 			<ul class="card__lista">
 				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-WandaVision-Vision/dp/B08KGV6SH6/ref=sr_1_1?__mk_es_MX=ÅMÅŽÕÑ&crid=2YHKEK2BBP6VQ&dchild=1&keywords=funko+pop+wandavision&qid=1615387643&refinements=p_89%3AFunko&rnid=11790855011&s=toys&sprefix=funko+pop+%2Caps%2C225&sr=1-1" target="_blank">Amazon</a></li>
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-887292170-funko-pop-marvel-wandavision-vision-blanco-_JM#position=20&type=item&tracking_id=178a00b6-f0e3-4a12-b057-ae04357cd74a" target="_blank">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="The-Vision">
+			<div class="card__imagen">
 				<img src="Recursos/The Vision.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="824">
+			<button class="card__boton" onclick="tarjeta(824)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
 
-		<div class="card" id="Funko-826">
+		<div class="card Agatha_Harkness" id="826">
 			<ul class="card__lista">
 				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-WandaVision-Harkness/dp/B08KGTKW53/ref=sr_1_5?__mk_es_MX=ÅMÅŽÕÑ&crid=2YHKEK2BBP6VQ&dchild=1&keywords=funko+pop+wandavision&qid=1615387643&refinements=p_89%3AFunko&rnid=11790855011&s=toys&sprefix=funko+pop+%2Caps%2C225&sr=1-5" target="_blank">Amazon</a></li>
 				<li><a href="https://articulo.mercadolibre.com.mx/MLM-887314443-funko-pop-marvel-wandavision-agatha-harkness-_JM#position=7&type=item&tracking_id=a2aa520e-cce7-4c95-b759-867ff5a7ecc2" target="_blank">Mercado Libre</a></li>
 			</ul>
-			<div class="card__imagen" id="Agatha-Harkness">
+			<div class="card__imagen">
 				<img src="Recursos/Agatha Harkness.jpg" alt="">
 			</div>
-			<button class="card__enlaces" id="826">
+			<button class="card__boton" onclick="tarjeta(826)">
 				<span>Links</span>
 				<i class="fas fa-arrow-alt-circle-right"></i>
 			</button>
 		</div>
+
+		<div class="card Venom" id="363">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figure-Marvel-Venom-Multicolor/dp/B07D512BPC/ref=sr_1_25?dchild=1&qid=1612028222&s=toys&sr=1-25" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-664232299-funko-pop-marvel-venom-venom-363-_JM#position=45&type=item&tracking_id=fe0518f8-b2ee-42fe-b26c-374540abc8ff" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venom.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(363)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venom" id="749">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-863964795-funko-pop-venom-749-venomized-special-edition-exclusive-_JM#position=34&type=item&tracking_id=6c790f5b-3618-436b-9888-2df4b0bbfa74" target="_blank">Mercado Libre</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-863963922-funko-pop-venom-749-glow-chase-limited-exclusive-venomized-_JM#position=45&type=item&tracking_id=228603ee-4cf8-486b-8f30-5491c8789f83" target="_blank">Mercado Libre <i>-Glow in the Dark-</i></a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venom(1).jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(749)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Miles_Morales" id="600">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Venom-Morales/dp/B07XF7VXG6/ref=sr_1_26?dchild=1&qid=1612028222&s=toys&sr=1-26" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-844800726-funko-pop-maximum-venom-venomized-miles-morales-600-_JM#position=40&type=item&tracking_id=e543f5a9-8c21-4510-808c-2b358c72a3dd" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Miles Morales.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(600)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_X-23" id="514">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Venom-X-23/dp/B07P82MSM5/ref=sr_1_106?dchild=1&qid=1612028338&s=toys&sr=1-106" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized X-23.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(514)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Gwenom" id="302">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figure-Marvel-Comics-Multicolor/dp/B0797B4K71/ref=sr_1_1386?dchild=1&qid=1612030508&s=toys&sr=1-1386" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-771555488-funko-pop-gwenom-302-marvel-_JM#position=31&type=item&tracking_id=3fc07550-e6f6-4987-a1bf-0faf8ce36869" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Gwenom.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(302)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Captain_America" id="364">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figure-Captain-America-Multicolor/dp/B07D57FF1M/ref=sr_1_242?dchild=1&qid=1612029859&s=toys&sr=1-242" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Captain America.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(364)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Daredevil" id="513">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Venom-Daredevil/dp/B07PCDMT21/ref=sr_1_115?dchild=1&qid=1612028338&s=toys&sr=1-115" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Daredevil.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(513)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Doctor_Strange" id="602">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Oscuridad-Exclusivo/dp/B086HPGFL7/ref=sr_1_1457?dchild=1&qid=1612030565&s=toys&sr=1-1457" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-759887121-funko-pop-marvel-venomized-doctor-strange-venom-602-_JM#position=20&type=item&tracking_id=f04a99ff-a48b-4cfb-a2ea-7f724a1f5034" target="_blank">Mercado Libre #1</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-845360871-funko-pop-maximum-venom-venomized-doctor-strange-602-_JM#position=43&type=item&tracking_id=812b200b-f6c0-4148-a46b-9826791017da" target="_blank">Mercado Libre #2</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Doctor Strange.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(602)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Groot" id="601">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-844800038-funko-pop-maximum-venom-venomized-groot-601-_JM#position=9&type=item&tracking_id=ec2fc545-c235-4e12-95a3-abe70394524a" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Groot(1).jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(601)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Groot" id="511">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Pop-Marvel-Venom-Groot/dp/B07P96KR2H/ref=sr_1_1328?dchild=1&qid=1612030474&s=toys&sr=1-1328" target="_blank">Amazon</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-767767840-funko-pop-marvel-venom-s2-groot-_JM#position=37&type=item&tracking_id=fe0518f8-b2ee-42fe-b26c-374540abc8ff" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Groot.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(511)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Hulk" id="366">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figure-Marvel-Venom-Multicolor/dp/B07D58Y2K3/ref=sr_1_1108?dchild=1&qid=1612030361&s=toys&sr=1-1108" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Hulk.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(366)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Iron_Man" id="365">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figure-Marvel-Venom-Multicolor/dp/B07D57L8NS/ref=sr_1_1351?dchild=1&qid=1612030494&s=toys&sr=1-1351" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Iron Man.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(365)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Thor" id="703">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-850675984-funko-pop-venomized-thor-703-special-edition-_JM#position=47&type=item&tracking_id=3105a760-e0cd-444b-81b2-f3b838711a6f" target="_blank">Mercado Libre #1</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-852184034-funko-pop-marvel-marvel-venom-thor-703-_JM?matt_tool=28238160&utm_source=google_shopping&utm_medium=organic" target="_blank">Mercado Libre #2</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-847964726-funko-pop-marvel-venom-venomized-thor-703-_JM#position=2&type=item&tracking_id=f04a99ff-a48b-4cfb-a2ea-7f724a1f5034" target="_blank">Mercado Libre #3</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-846329987-funko-pop-marvel-venomized-thor-703-special-edition-_JM#position=19&type=item&tracking_id=e543f5a9-8c21-4510-808c-2b358c72a3dd" target="_blank">Mercado Libre #4</a></li>
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-838691085-funko-pop-marvel-venomizados-thor-exclusivo-_JM#position=21&type=item&tracking_id=9601b441-934e-4f6a-9aad-9d7b72f1e78d" target="_blank">Mercado Libre #5</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Thor.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(703)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Anti-Venom" id="100">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figurine-Marvel-Venom-0849803061814/dp/B0169VLNF4/ref=sr_1_154?dchild=1&qid=1612028395&s=toys&sr=1-154" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Anti-Venom.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(100)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Carnage" id="099">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Figurine-Marvel-Carnage-0849803061821/dp/B0169VLNJK/ref=sr_1_155?dchild=1&qid=1612028395&s=toys&sr=1-155" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Carnage.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(099)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Scream_Symbiote" id="671">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-832822736-funko-pop-marvel-venom-scream-671-saharis-exclusive-_JM#position=46&type=item&tracking_id=1beb8272-54d2-4604-8810-7902e84b20a0" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Scream Symbiote.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(671)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Spider-Carnage" id="486">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-714776238-funko-pop-spiderman-spider-carnage-exclusive-c-protector-_JM#position=28&type=item&tracking_id=dc5b92ca-35ec-4f9b-bdfb-b4c883e0c51b" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Spider-Carnage.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(486)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Black_Panther" id="370">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-862353808-funko-pop-venomized-black-phanter-monster-store-exclusive-_JM#position=33&type=item&tracking_id=e543f5a9-8c21-4510-808c-2b358c72a3dd" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Black Panther.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(370)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Ghost_Rider" id="369">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-831947834-funko-pop-venomized-ghost-rider-exclusive-_JM#position=31&type=item&tracking_id=a7fde1b5-07ae-408a-8955-4f38b6126e03" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Ghost Rider.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(369)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venomized_Punisher" id="595">
+			<ul class="card__lista">
+				<li><a href="https://articulo.mercadolibre.com.mx/MLM-758682936-funko-pop-marvel-venomized-punisher-595-envio-incluido-_JM#position=10&type=item&tracking_id=bf247d37-ecef-44c1-918b-c2ab4f7d1f79" target="_blank">Mercado Libre</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venomized Punisher.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(595)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
+		<div class="card Venompool" id="300">
+			<ul class="card__lista">
+				<li><a href="https://www.amazon.com.mx/Funko-Toy-Figure-Games-Venompool/dp/B0771RV2MX/ref=sr_1_433?dchild=1&qid=1612029977&s=toys&sr=1-433" target="_blank">Amazon</a></li>
+			</ul>
+			<div class="card__imagen">
+				<img src="Recursos/Venompool.jpg" alt="">
+			</div>
+			<button class="card__boton" onclick="tarjeta(300)">
+				<span>Links</span>
+				<i class="fas fa-arrow-alt-circle-right"></i>
+			</button>
+		</div>
+
 	</div>	
 
 
